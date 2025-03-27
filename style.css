@@ -88,6 +88,7 @@ header nav a:hover {
     text-align: justify;
 }
 
+
 #Home::after {
     content: 'H'; 
     font-family: 'Roboto Slab', serif;
@@ -284,7 +285,7 @@ body {
 
 
 .image-container {
-    width: cover; 
+    width:100%;
     height: 58vh; 
     overflow: hidden; 
     border-bottom: 2px solid #c1b086; 
@@ -293,7 +294,7 @@ body {
 }
 
 .image-container img {
-    width: 100%;
+    width: 110%;
     height: 100%;
     object-fit: cover; 
 }
@@ -302,7 +303,7 @@ body {
 .blue-box {
     position: absolute; /* Au lieu de fixed */
     top: 63.5%; 
-    left: 65.1%; 
+    left:66.1%; 
     transform: translate(-50%, -50%); 
     width: 580px; 
     height: 335px; 
@@ -389,8 +390,8 @@ body {
 
 .home-button a{
     position: absolute; 
-    top: 92.5%; 
-    left: 95%; 
+    top:73vh;
+    left:195vh;
     transform: translate(-50%, -50%);
     padding: 15px 30px;
     background-color: #c1b086;
@@ -409,23 +410,20 @@ body {
 }
 /*Rooms__________________________________________________________________________________________________________________________________________________________________________________________________________*/
 body {
-    font-family: Arial, sans-serif;/*police par defaut*/
     margin: 0;
     padding: 0;
-    
-   
+    background-color: white; /* Fond blanc */
+    color: black;
+    font-family: 'Roboto Slab', serif;
 }
 
-#Rooms {
+#Rooms{ 
     display: flex;
-    flex-direction: row; 
-    height: 100vh;
-    width: 100vw;
+    flex-direction: row;
     align-items: center; 
-    justify-content: center; 
-    gap: 50px; 
+    justify-content: center;
+    gap: 50px;
     padding: 50px;
-    
 }
 
 #image-container {
@@ -433,7 +431,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px; 
+    gap: 5px;
     padding: 20px;
     height: 60vh; 
 }
@@ -445,19 +443,19 @@ body {
     height: 390px; 
     overflow: hidden;
     border-radius: 15px;
-    border: 2px solid #c1b086;
-    top: 80px; 
+    border: 2px solid #c1b086; 
+    top: 80px;
     left: 118px; 
 }
 
-
+/* Style de l'image dans le premier encadré */
 #box1 img {
     width: 100%;
     height: 82%;
     object-fit: cover; 
 }
 
-
+/* Style de l'image dans le deuxième encadré */
 #box2 {
     position: relative;
     width: 318px; 
@@ -479,14 +477,14 @@ body {
 
 #box3 {
     position: relative;
-    width: 318px; 
-    height: 390px; 
+    width: 318px;
+    height: 390px;
 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
     top: 80px; 
-    left: 148px; 
+    left: 148px;
 }
 
 #box3 img {
@@ -527,8 +525,8 @@ body {
     content: "";
     display: block;
     width: 60px; 
-    height: 2.5px; 
-    background-color: #c1b086; 
+    height: 2.5px;
+    background-color: #c1b086;
     position: absolute;
     top: -8px; 
     left: 0; 
@@ -536,8 +534,8 @@ body {
 
 #text-container {
     position: absolute;
-    top: 20px; 
-    left: 70px; 
+    top: 20px;
+    left: 70px;
     width: auto;
 }
 
@@ -552,27 +550,27 @@ body {
     text-decoration: none;
     font-size: 7px;
     border-radius: 20px; 
-    border: 1px solid white; 
+    border: 1px solid white;
     box-shadow: 5px 10px 35px rgba(0, 0, 0, 0.5); 
     transition: background-color 0.3s ease-in-out;
 }
 
 .home-button:hover {
-    background-color: #c1b086;
+    background-color: #c1b086; 
 }
 
 .room-info {
-    width: 100%;
+    width: 100%; 
     padding-top:-0.6px; 
-    padding-left: 16px; 
-    box-sizing: border-box; 
+    padding-left: 16px;
+    box-sizing: border-box;
     margin-top: -4px; 
 }
 
 /* Style pour les titres des chambres */
 .room-info h3 {
     font-size: 12px;
-    color: #333; 
+    color: #333;
 }
 
 /* Style pour le prix */
@@ -587,9 +585,6 @@ body {
     font-weight: bold; 
     color: #333; 
 }
-
-
-
 
 /*Restaurant_________________________________________________________________________________________________________________*/
 body {
@@ -608,8 +603,8 @@ body {
     width: 100vw;
     align-items: center; 
     justify-content: center; 
-    gap: 50px; 
-    padding: 50px;
+    gap:50px; 
+    padding: 90px;
 }
 
 #image-container {
@@ -642,16 +637,21 @@ body {
     object-fit: cover;
 }
 
+#box1{
+    
+    left: 280px; 
+}
+
 /* Style de l'image dans le deuxième encadré */
 #box2 {
     position: relative;
-    width: 323px; 
+    width:320px; 
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
     top: -9px; 
-    left: 410px; 
+    left:290px;
 }
 
 #box2 img {
@@ -662,13 +662,13 @@ body {
 /* Style de l'image dans le deuxième encadré */
 #box3 {
     position: relative;
-    width: 323px; 
+    width: 320px; 
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
     top: -9px; 
-    left:410px; 
+    left:300px;
 }
 
 #box3 img {
@@ -680,13 +680,13 @@ body {
 /* Style de l'image dans le deuxième encadré */
 #box4 {
     position: relative;
-    width: 323px; 
+    width: 320px; 
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
     top: 196px;
-    left: -250px; 
+    left:-367px;
 }
 
 #box4 img {
@@ -698,13 +698,13 @@ body {
 /* Style de l'image dans le deuxième encadré */
 #box5 {
     position: relative;
-    width: 323px;
+    width: 320px;
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
     top: 196px; 
-    left: -250px; 
+    left: -355px; 
 }
 
 #box5 img {
@@ -764,7 +764,7 @@ body {
     font-weight: normal;
     display: inline-block;
     position: relative; 
-    left: -420px;
+    left:100px;
     margin-top: -340px; 
     padding: 15px 30px;
     background-color: #c1b086;
