@@ -1,263 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /*Acceuil__________________________________________________________________________________________________________*/
+
+
+/*Amenties__________________________________________________________________________________________________________________*/
+
 body {
-    margin : 0 auto;
-    color : #fff;
-    font-family: 'Roboto Slab', serif;
-   
-}
-
-.background img {
-    width: 100%;
-    height: 100vh; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    z-index: -1; 
-    
-}
-
-header h1 {
-    display: inline-block; 
-}
-.logo img {
-    width: 90px; 
-    height: auto; 
-    margin-left: 125px;
-    margin-top: 20px;
-}
-
-header nav {
-    display: flex; 
-    float:right; 
-    margin-top: -30px;
-    position: relative; 
-    right: 120px; 
-}
-
-header nav a {
-    text-decoration: none; 
-    color: #fff; 
-    font-size: 12px; 
-    padding: 0 20px; 
-    cursor: pointer;
-    margin-left: -15px; 
-}
-
-header nav a:hover {
-    color:  #c1b086;
-}
-.Acceuil{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    height:600px;
-    padding-top: 81px;
-    position: relative; 
-    overflow: hidden; 
-}
-.Acceuil h1 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 55px;
-    color: white; 
+    margin: 0;
     padding: 0;
-    background: none; 
-    border: none; 
-    text-align: left; 
-    font-weight: normal; 
-    margin-left: 150px; 
-    margin-top: 27px; 
-    position: relative; 
-    z-index: 1; 
-}
-
-.Acceuil p {
-    font-family: 'Roboto Slab', serif !important;
-    font-weight: normal; 
-    font-size: 10.4px;
-    width:  46.3%;
-    line-height: 20px;
-    color: #fff;
-    margin-left:205px; 
-    margin-top: -28px; 
-    position: relative; 
-    z-index: 1;
-    text-align: justify;
-}
-
-#Home::after {
-    content: 'H'; 
     font-family: 'Roboto Slab', serif;
-    font-size: 303px;
-    color: rgba(255, 255, 255, 0.2); 
-    position: absolute;
-    top: 40.4%;
-    left: 24.35%;
-    transform: translate(-50%, -50%); 
-    z-index: -1; 
-    font-weight: bold;
+    overflow: hidden;
 }
-
-
-#About{
+#Amenties{
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
     height: 100vh;
-    width: 100vw;
-    align-items: center; 
-    justify-content: center; 
-    gap: 50px; 
-    padding: 50px;
+    position: relative;
+
 }
+
 
 .image-container {
-    position: relative; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px; 
-    padding: 20px;
-    height: 60vh; 
+    width: cover; 
+    height: 58vh; 
+    overflow: hidden; 
+    border-bottom: 2px solid #c1b086; 
+    border-top: 2px solid #c1b086;
+    position: absolute; 
 }
 
-/* Encadré avec coins arrondis et bordure dorée */
-.containe {
-    position: relative;
-    width: 220px; 
-    height: 320px; 
-    overflow: hidden;
-    border-radius: 15px;
-    border: 2px solid #c1b086; 
-    top: 46px; 
-    left: -80px; 
-    box-shadow: 4px 4px 4px black; 
-}
-.grid-layout{
-    position: relative;
-    width: 220px; 
-    height: 320px; 
-    overflow: hidden;
-    border-radius: 15px;
-    border: 2px solid #c1b086; 
-    top: 46px; 
-    left: -80px; 
-    box-shadow: 4px 4px 4px black; 
-}
-
-.containe{
-    transition: transform 0.3s ease-in-out;
-}
-
-.containe:hover {
-    transform: scale(1.3);
-}
-.grid-layout{
-    transition: transform 0.3s ease-in-out;
-}
-
-.grid-layout:hover {
-    transform: scale(1.3);
-}
-
-/* Style de l'image dans le premier encadré */
-.containe  img {
+.image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
 }
 
-/* Style de l'image dans le deuxième encadré */
 
-.grid-layout{
-    position: relative;
-    width: 230px; 
-    height: 160px; 
-    border-radius: 15px;
-    border: 2px solid #c1b086;
-    overflow: hidden;
-    top: 153px; 
-    left: -187px; 
-    box-shadow: 4px 4px 4px black; 
+.blue-box {
+    position: absolute; /* Au lieu de fixed */
+    top: 63.5%; 
+    left: 65.1%; 
+    transform: translate(-50%, -50%); 
+    width: 580px; 
+    height: 335px; 
+    background-color: #3f9cc1; 
+    border: 3px solid #c1b086; 
+    border-radius: 15px; 
+    z-index: 10; 
+    padding: 32px; 
+    box-sizing: border-box; 
+    color: white;
+    box-shadow: 4px 4px 4px black;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.4; 
+}
+        
+    
+
+
+
+.blue-box:hover {
+    opacity: 1;
 }
 
-.grid-layout img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
 
-.text {
-    width: 30%;
-}
-
-/* Style du texte */
-.text h1 {
-    font-size: 20px;
-    color: black;
-    font-weight: normal;
-    line-height: 1.6;
-    text-align: left;
-    margin-left: -92px ;
-    font-weight: bold ;
+.blue-box h1 {
+    font-size: 16px;
+    color: white; 
+    margin: 0; 
     font-family: 'Roboto Slab', serif;
+    font-weight: normal; 
+    margin: 0 0 20px 0;
+    margin-top: 1px; 
 }
 
-.text h2 {
-    position: relative;
-    font-size: 10px;
-    color: #555;
-    font-weight: normal;
-    line-height: 1.6;
-    text-align: left;
-    margin-left: -92px;
-    width: 135%;
-    margin-top: 80px ;
-    padding-top: 10px; 
-}
-
-.text h2::before {
-    content: "";
-    display: block;
-    width: 70px; 
-    height: 2.5px; 
-    background-color: #c1b086; 
-    position: absolute;
-    top: -10px; 
-    left: 0; 
-}
-
-.text p {
-    font-size: 10px;
-    color: #555;
-    line-height: 1.6;
-    text-align: left;
-    margin-top: 35px ;
-    margin-left: -60px ;
-    width: 135%;
+/* Style pour le texte dans l'encadré */
+.blue-box p {
+    font-size: 10px; 
+    color: white;
+    margin: 0; 
+    font-weight: normal; 
+    font-family: 'Roboto Slab', serif;
+    line-height: 2; 
     text-align: justify; 
 }
 
-.p2 {
-    margin-top: 20px; 
+/* Conteneur pour les icônes */
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 30px 0;
+    color: white;
 }
 
+
+/* Style pour chaque icône */
+.icon-item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px; 
+}
+
+
+.icon-item span {
+    font-size: 9px; 
+    color: #fff; 
+}
+
+.icon-item p {
+    font-size: 9px;
+    color: white; 
+    margin: 0;
+    text-align: left;
+}
+
+
+.empty-container {
+    width: 100%;
+    height: 50vh; 
+    background-color: white; 
+}
+
+
 .home-button a{
-    font-weight: normal;
-    display: inline-block;
-    margin-top: 450px; 
-    margin-left: -420px ;
+    position: absolute; 
+    top: 92.5%; 
+    left: 95%; 
+    transform: translate(-50%, -50%);
     padding: 15px 30px;
-    background-color: #c1b086; 
+    background-color: #c1b086;
     color: white;
     text-decoration: none;
     font-size: 7px;
-    border-radius: 20px; 
+    border-radius: 20px;
     border: 1px solid white;
-    box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.5); 
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease-in-out;
 }
 
-.home-button a:hover {
-    background-color: #c1b086;
+
+.home-button:hover {
+    background-color:#c1b086;
 }
