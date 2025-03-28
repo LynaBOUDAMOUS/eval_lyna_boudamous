@@ -406,7 +406,13 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-
+#Rooms {
+    height: 100vh; 
+    padding: 10%; 
+    display: flex; 
+    align-items: center; 
+    background: white;
+}
 #Rooms .image-container {
     position: relative; 
     display: flex;
@@ -432,7 +438,7 @@ body {
 /* Style de l'image dans le premier encadré */
 #Rooms #box1 img {
     width: 100%;
-    height: 82%;
+    height: 80%;
     object-fit: cover; 
 }
 
@@ -440,50 +446,48 @@ body {
 /* Style de l'image dans le deuxième encadré */
 #Rooms #box1 {
     position: relative;
-    width: 318px; 
-    height: 390px;
+    width: 260px; 
+    height: 320px;
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    top: 80px; 
-    left: 133px; 
+    top: -80px;
+    left: 8px; 
 }
 
 /* Style de l'image dans le deuxième encadré */
 #Rooms #box2 {
     position: relative;
-    width: 318px; 
-    height: 390px;
-
+    width: 260px; 
+    height: 320px;
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    top: 80px; 
-    left: 133px; 
+    top: -80px;
+    left: 18px; 
 }
 
 #Rooms #box2 img {
     width: 100%;
-    height: 82%;
+    height: 80%;
     object-fit: cover; 
 }
 
 
 #Rooms #box3 {
     position: relative;
-    width: 318px;
-    height: 390px;
-
+    width: 260px; 
+    height: 320px;
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    top: 80px; 
-    left: 148px;
+    top: -80px;
+    left: 26px; 
 }
 
 #Rooms #box3 img {
     width: 100%;
-    height: 82%;
+    height: 80%;
     object-fit: cover;
 }
 
@@ -498,7 +502,7 @@ body {
     font-weight: normal;
     line-height: 1.6;
     text-align: left;
-    margin-left: 55px ;
+    margin-left: 25px ;
 }
 
 #Rooms .text-container h2 {
@@ -508,9 +512,9 @@ body {
     font-weight: normal;
     line-height: 1.6;
     text-align: left;
-    margin-left: 55px;
+    margin-left: -880px;
     width: 135%;
-    margin-top: 10px !important;
+    margin-top: -360px;       
     padding-top: 10px; 
     text-align: justify; 
 }
@@ -522,7 +526,7 @@ body {
     height: 2.5px;
     background-color: #c1b086;
     position: relative;
-    top: -8px; 
+    top:-20px;
     left: 0; 
 }
 
@@ -536,8 +540,8 @@ body {
 #Rooms .home-button {
     font-weight: normal;
     display: inline-block;
-    margin-top: -340px; 
-    margin-right: 142px !important;
+    margin-top:-580px;
+    margin-left:-300px;
     padding: 15px 30px;
     background-color: #c1b086; 
     color: white;
@@ -591,14 +595,11 @@ body {
 }
 
 #Restaurant{
-    display: flex;
-    flex-direction: row; 
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; 
+    padding: 10%; 
+    display: flex; 
     align-items: center; 
-    justify-content: center; 
-    gap:50px; 
-    padding: 90px;
+    background: white;
 }
 
 #Restaurant .image-container {
@@ -627,13 +628,15 @@ body {
 /* Style de l'image dans le premier encadré */
 #Restaurant #box1 img {
     width: 160%;
-    height: 100%;
+    height: 110%;
     object-fit: cover;
 }
 
 #Restaurant #box1{
-    top: -80px; 
-    left: 450px; 
+    top: -100px;
+    left:20px; 
+    width: 309px;
+    height: 500px;
 }
 
 /* Style de l'image dans le deuxième encadré */
@@ -645,7 +648,7 @@ body {
     border: 2px solid #c1b086;
     overflow: hidden;
     top: -150px; 
-    left:470px;
+    left:40px;
 }
 
 #Restaurant #box2 img {
@@ -656,13 +659,13 @@ body {
 /* Style de l'image dans le deuxième encadré */
 #Restaurant #box3 {
     position: relative;
-    width: 320px; 
+    width: 300px; 
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
     top: -150px; 
-    left:480px;
+    left:50px;
 }
 
 #Restaurant #box3 img {
@@ -674,13 +677,14 @@ body {
 /* Style de l'image dans le deuxième encadré */
 #Restaurant #box4 {
     position: relative;
-    width: 320px; 
-    height: 187px; 
+    width: 320px;
+    height: 187px;
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    top: 80px;
-    left:-190px;
+    top: 50px;
+    left:-595px;
+
 }
 
 #Restaurant #box4 img {
@@ -692,13 +696,14 @@ body {
 /* Style de l'image dans le deuxième encadré */
 #Restaurant #box5 {
     position: relative;
-    width: 320px;
+    width: 300px;
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    top: 80px;
-    left:-180px;
+    top: 50px;
+    left:-580px;
+
 }
 
 #Restaurant #box5 img {
@@ -711,8 +716,8 @@ body {
 
 #Restaurant .text-container {
     position: relative;
-    top: 7px;
-    left: 12px; 
+    top:-7px;
+    left: 10px; 
     font-size: 9px;
 }
 
@@ -723,7 +728,7 @@ body {
     font-weight: normal;
     line-height: 9;
     text-align: left;
-    margin-left: -405px ;
+    margin-left:-705px ;
     width: 100%;
     
 }
@@ -810,7 +815,7 @@ body {
 
 .description-overlay .description {
     color: white;
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
     transform: translateY(-50px); 
     transition: transform 0.5s ease-out;
