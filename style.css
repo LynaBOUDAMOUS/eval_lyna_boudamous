@@ -15,39 +15,40 @@ body {
 }
 
 
+
 #Rooms .rooms-content {
     display: flex;
-    flex-direction: row;/
-    align-items: center; 
-    justify-content: center;
-    gap: 50px;
+    flex-direction: row; /* Alignement des images à gauche, texte à droite */
+    align-items: center; /* Alignement vertical des éléments */
+    justify-content: center; /* Centrer horizontalement le contenu */
+    gap: 50px; /* Espacement entre les images et le texte */
     padding: 50px;
-    height: 80vh; 
+    height: 80vh; /* Utilise toute la hauteur de l'écran */
 }
 
 #Rooms .rooms-image-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between; /* Espace égal entre les boîtes d'images */
     align-items: center;
-    gap: 5px; 
+    gap: 5px; /* Espacement entre les images */
     padding: 20px;
-    height: 60vh; 
+    height: 60vh; /* Hauteur des images */
 }
 
 #Rooms .rooms-image-box1,
 #Rooms .rooms-image-box2,
 #Rooms .rooms-image-box3 {
-    width: 318px; 
-    height: 390px; 
-    overflow: hidden;
-    border-radius: 15px;
-    border: 2px solid #c1b086; 
+    width: 318px; /* Largeur fixe pour les images */
+    height: 390px; /* Hauteur fixe pour chaque boîte */
+    overflow: hidden; /* Cacher tout ce qui dépasse de la boîte */
+    border-radius: 15px; /* Coins arrondis */
+    border: 2px solid #c1b086; /* Bordure dorée */
     position: relative;
     left:50px;
     top:50px;
 }
 
-
+/* Style des images dans chaque boîte */
 #Rooms .rooms-image-box1 img,
 #Rooms .rooms-image-box2 img,
 #Rooms .rooms-image-box3 img {
@@ -87,9 +88,10 @@ body {
 
 
 
+/* Assurez-vous que le conteneur 'rooms-text-container' n'affecte que la page Rooms */
 #Rooms .rooms-text-container {
     width: 100%;  
-    position: relative; 
+    position: relative; /* Enlever toute position absolue ici */
     font-family: 'Roboto Slab', serif !important;
 }
 
