@@ -446,8 +446,8 @@ body {
 /* Style de l'image dans le deuxième encadré */
 #Rooms #box1 {
     position: relative;
-    width: 260px; 
-    height: 320px;
+    width: 340px; 
+    height: 420px;
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
@@ -458,8 +458,8 @@ body {
 /* Style de l'image dans le deuxième encadré */
 #Rooms #box2 {
     position: relative;
-    width: 260px; 
-    height: 320px;
+    width: 340px; 
+    height: 420px;
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
@@ -476,8 +476,8 @@ body {
 
 #Rooms #box3 {
     position: relative;
-    width: 260px; 
-    height: 320px;
+    width: 340px; 
+    height: 420px;
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
@@ -512,9 +512,9 @@ body {
     font-weight: normal;
     line-height: 1.6;
     text-align: left;
-    margin-left: -880px;
+    margin-left: -1000px;
     width: 135%;
-    margin-top: -360px;       
+    margin-top: -390px;       
     padding-top: 10px; 
     text-align: justify; 
 }
@@ -540,7 +540,7 @@ body {
 #Rooms .home-button {
     font-weight: normal;
     display: inline-block;
-    margin-top:-580px;
+    margin-top:-560px;
     margin-left:-300px;
     padding: 15px 30px;
     background-color: #c1b086; 
