@@ -105,24 +105,18 @@ header nav a:hover {
 
 /*About____________________________________________________________________________________________________________________________*/
 #About{
-    display: flex;
-    flex-direction: row; 
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; 
+    padding: 10%; 
+    display: flex; 
     align-items: center; 
-    justify-content: center; 
-    gap: 50px; 
-    padding: 50px;
+    background: white;
 }
 
 .image-container {
-    position: relative; 
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 5px; 
-    padding: 20px;
-    height: 60vh; 
+    justify-content: space-between;
+    width: 100%;
 }
 
 /* Encadré avec coins arrondis et bordure dorée */
@@ -202,7 +196,7 @@ header nav a:hover {
     font-weight: normal;
     line-height: 1.6;
     text-align: left;
-    margin-left: -92px ;
+    margin-left: 302px ;
     font-weight: bold ;
     font-family: 'Roboto Slab', serif;
 }
@@ -214,9 +208,9 @@ header nav a:hover {
     font-weight: normal;
     line-height: 1.6;
     text-align: left;
-    margin-left: -92px;
+    margin-left: 310px;
     width: 135%;
-    margin-top: 80px ;
+    margin-top: -300px ;
     padding-top: 10px; 
 }
 
@@ -226,9 +220,9 @@ header nav a:hover {
     width: 70px; 
     height: 2.5px; 
     background-color: #c1b086; 
-    position: absolute;
+    position: relative;
     top: -10px; 
-    left: 0; 
+    
 }
 
 .text p {
@@ -236,17 +230,15 @@ header nav a:hover {
     color: #555;
     line-height: 1.6;
     text-align: left;
-    margin-top: 35px ;
-    margin-left: -60px ;
+    margin-top: -140px ;
+    margin-left: 550px ;
     width: 135%;
     text-align: justify; 
 }
 
-.p2 {
-    margin-top: 20px; 
-}
 
-.home-button a{
+
+#About .home-button a{
     font-weight: normal;
     display: inline-block;
     margin-top: 450px; 
@@ -260,9 +252,10 @@ header nav a:hover {
     border: 1px solid white;
     box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.5); 
     transition: background-color 0.3s ease-in-out;
+    position: relative;
 }
 
-.home-button a:hover {
+#About .home-button a:hover {
     background-color: #c1b086;
 }
 
@@ -283,7 +276,6 @@ body {
 
 }
 
-
 .image-container {
     width:100%;
     height: 58vh; 
@@ -303,7 +295,7 @@ body {
 .blue-box {
     position: absolute; /* Au lieu de fixed */
     top: 63.5%; 
-    left:66.1%; 
+    left:65.1%; 
     transform: translate(-50%, -50%); 
     width: 580px; 
     height: 335px; 
@@ -388,10 +380,11 @@ body {
 }
 
 
-.home-button a{
-    position: absolute; 
-    top:73vh;
-    left:195vh;
+#Amenties .home-button a{
+    
+    position: relative; 
+    top:90vh;
+    left:198vh;
     transform: translate(-50%, -50%);
     padding: 15px 30px;
     background-color: #c1b086;
@@ -405,7 +398,7 @@ body {
 }
 
 
-.home-button:hover {
+#Amenties .home-button:hover {
     background-color:#c1b086;
 }
 /*Rooms__________________________________________________________________________________________________________________________________________________________________________________________________________*/
@@ -417,16 +410,8 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-#Rooms{ 
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: center;
-    gap: 50px;
-    padding: 50px;
-}
 
-#image-container {
+#Rooms .image-container {
     position: relative; 
     display: flex;
     justify-content: center;
@@ -437,7 +422,7 @@ body {
 }
 
 /* Encadré avec coins arrondis et bordure dorée */
-.image-box {
+#Rooms .image-box {
     position: relative;
     width: 318px; 
     height: 390px; 
@@ -449,14 +434,14 @@ body {
 }
 
 /* Style de l'image dans le premier encadré */
-#box1 img {
+#Rooms #box1 img {
     width: 100%;
     height: 82%;
     object-fit: cover; 
 }
 
 /* Style de l'image dans le deuxième encadré */
-#box2 {
+#Rooms #box2 {
     position: relative;
     width: 318px; 
     height: 390px;
@@ -468,14 +453,14 @@ body {
     left: 133px; 
 }
 
-#box2 img {
+#Rooms #box2 img {
     width: 100%;
     height: 82%;
     object-fit: cover; 
 }
 
 
-#box3 {
+#Rooms #box3 {
     position: relative;
     width: 318px;
     height: 390px;
@@ -487,18 +472,18 @@ body {
     left: 148px;
 }
 
-#box3 img {
+#Rooms #box3 img {
     width: 100%;
     height: 82%;
     object-fit: cover;
 }
 
-#text-container {
+#Rooms .text-container {
     width: 30%;
 }
 
 /* Style du texte */
-#text-container h1 {
+#Rooms  .text-container h1 {
     font-size: 20px;
     color: black;
     font-weight: normal;
@@ -507,7 +492,7 @@ body {
     margin-left: 55px ;
 }
 
-#text-container h2 {
+#Rooms .text-container h2 {
     position: relative;
     font-size: 9px;
     color: #555;
@@ -521,25 +506,25 @@ body {
     text-align: justify; 
 }
 
-#text-container h2::before {
+#Rooms .text-container h2::before {
     content: "";
     display: block;
     width: 60px; 
     height: 2.5px;
     background-color: #c1b086;
-    position: absolute;
+    position: relative;
     top: -8px; 
     left: 0; 
 }
 
-#text-container {
-    position: absolute;
+#Rooms  .text-container {
+    position: relative;
     top: 20px;
     left: 70px;
     width: auto;
 }
 
-.home-button {
+#Rooms .home-button {
     font-weight: normal;
     display: inline-block;
     margin-top: -340px; 
@@ -555,7 +540,7 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
-.home-button:hover {
+#Rooms .home-button:hover {
     background-color: #c1b086; 
 }
 
@@ -607,7 +592,7 @@ body {
     padding: 90px;
 }
 
-#image-container {
+#Restaurant .image-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -618,7 +603,7 @@ body {
 }
 
 /* Encadré avec coins arrondis et bordure dorée */
-.image-box {
+#Restaurant .image-box {
     position: relative;
     width: 332px; 
     height: 520px; 
@@ -631,83 +616,83 @@ body {
 }
 
 /* Style de l'image dans le premier encadré */
-#box1 img {
+#Restaurant #box1 img {
     width: 160%;
     height: 100%;
     object-fit: cover;
 }
 
-#box1{
-    
-    left: 280px; 
+#Restaurant #box1{
+    top: -80px; 
+    left: 450px; 
 }
 
 /* Style de l'image dans le deuxième encadré */
-#box2 {
+#Restaurant #box2 {
     position: relative;
     width:320px; 
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    top: -9px; 
-    left:290px;
+    top: -150px; 
+    left:470px;
 }
 
-#box2 img {
+#Restaurant #box2 img {
     width: 100%;
     height: auto;   
 }
 
 /* Style de l'image dans le deuxième encadré */
-#box3 {
+#Restaurant #box3 {
     position: relative;
     width: 320px; 
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    top: -9px; 
-    left:300px;
+    top: -150px; 
+    left:480px;
 }
 
-#box3 img {
+#Restaurant #box3 img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
 }
 
 /* Style de l'image dans le deuxième encadré */
-#box4 {
+#Restaurant #box4 {
     position: relative;
     width: 320px; 
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    top: 196px;
-    left:-367px;
+    top: 80px;
+    left:-190px;
 }
 
-#box4 img {
+#Restaurant #box4 img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
 }
 
 /* Style de l'image dans le deuxième encadré */
-#box5 {
+#Restaurant #box5 {
     position: relative;
     width: 320px;
     height: 187px; 
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    top: 196px; 
-    left: -355px; 
+    top: 80px;
+    left:-180px;
 }
 
-#box5 img {
+#Restaurant #box5 img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
@@ -715,32 +700,32 @@ body {
 
 
 
-#text-container {
-    position: absolute;
+#Restaurant .text-container {
+    position: relative;
     top: 7px;
     left: 12px; 
     font-size: 9px;
 }
 
 /* Style du texte */
-#text-container h1 {
+#Restaurant .text-container h1 {
     font-size: 20px;
     color: black;
     font-weight: normal;
     line-height: 9;
     text-align: left;
-    margin-left: 405px ;
+    margin-left: -405px ;
     width: 100%;
     
 }
 
-#text-container h1::before {
+#Restaurant .text-container h1::before {
     content: "";
     display: block;
     width: 67px; 
     height: 3px; 
     background-color: #c1b086; 
-    position: absolute;
+    position: relative;
     top: 70px; 
     left: 0; 
     margin-left: 405px ;
@@ -748,11 +733,11 @@ body {
 }
 
 /* Phrase */
-#text-container p {
+#Restaurant .text-container p {
     font-size: 11px;
     color: #555;
     line-height: 1.6;
-    position: absolute; 
+    position: relative; 
     top: 150px; 
     left: 405px; 
     width: 60%; 
@@ -760,7 +745,7 @@ body {
     margin-top: -7px;
 }
 
-.home-button {
+#Restaurant .home-button {
     font-weight: normal;
     display: inline-block;
     position: relative; 
@@ -777,6 +762,7 @@ body {
     transition: background-color 0.3s ease-in-out;
     margin-right: 142px ;
 }
+
 
 
 .overlay {
@@ -855,10 +841,10 @@ body {
     align-items: center; 
     justify-content: center; 
     gap: 50px; 
-    padding: 50px;
+    
 }
 
-#image-container {
+#Gallery .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -897,28 +883,29 @@ body {
     opacity: 1; /* Image agrandie sans transparence */
 }
 
-#text-container {
+#Gallery .text-container {
     width: 30%;
-    position: absolute;
-    top: 20px;
-    left: 70px;
+    position: relative;
+    top: 40px;
+    left: -50px;
 }
 
-#text-container h1 {
+#Gallery .text-container h1 {
     font-size: 20px;
     color: black;
-    line-height: -100;
+    line-height: 5;
     text-align: left;
-    margin-left: 55px;
+    margin-left: -900px;
     font-weight: normal;
+    
 }
 
-#text-container h2 {
+#Gallery .text-container h2 {
     font-size: 9px;
     color: #555;
     line-height:1.6;
     text-align: left;
-    margin-left: 55px;
+    margin-left: -900px;
     width: 135%;
     margin-top: 90px !important;
     text-align: justify;
@@ -926,18 +913,18 @@ body {
     font-weight: normal;
 }
 
-#text-container h2::before {
+#Gallery .text-container h2::before {
     content: "";
     display: block;
     width: 60px;
     height: 2.5px;
     background-color: #c1b086;
-    position: absolute;
+    position: relative;
     margin-top:-20px;
-    left: 0;
+    left: 40;
 }
 
-.home-button {
+#Gallery .home-button {
     font-weight: normal;
     display: inline-block;
     margin-top: -340px;
@@ -954,7 +941,7 @@ body {
     position: absolute;
 }
 
-.home-button:hover {
+#Gallery .home-button:hover {
     background-color: #c1b086;
 }
 
