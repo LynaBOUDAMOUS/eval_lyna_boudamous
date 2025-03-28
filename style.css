@@ -411,31 +411,31 @@ body {
 
 #Rooms .rooms-content {
     display: flex;
-    flex-direction: row;/
-    align-items: center; 
-    justify-content: center;
-    gap: 50px;
+    flex-direction: row; /* Alignement des images à gauche, texte à droite */
+    align-items: center; /* Alignement vertical des éléments */
+    justify-content: center; /* Centrer horizontalement le contenu */
+    gap: 50px; /* Espacement entre les images et le texte */
     padding: 50px;
-    height: 80vh; 
+    height: 80vh; /* Utilise toute la hauteur de l'écran */
 }
 
 #Rooms .rooms-image-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between; /* Espace égal entre les boîtes d'images */
     align-items: center;
-    gap: 5px; 
+    gap: 5px; /* Espacement entre les images */
     padding: 20px;
-    height: 60vh; 
+    height: 60vh; /* Hauteur des images */
 }
 
 #Rooms .rooms-image-box1,
 #Rooms .rooms-image-box2,
 #Rooms .rooms-image-box3 {
     width: 318px; 
-    height: 390px; 
-    overflow: hidden;
-    border-radius: 15px;
-    border: 2px solid #c1b086; 
+    height: 390px; /* Hauteur fixe pour chaque boîte */
+    overflow: hidden; /* Cacher tout ce qui dépasse de la boîte */
+    border-radius: 15px; /* Coins arrondis */
+    border: 2px solid #c1b086; /* Bordure dorée */
     position: relative;
     left:50px;
     top:50px;
@@ -447,10 +447,9 @@ body {
 #Rooms .rooms-image-box3 img {
     width: 100%;
     height: 82%;
-    object-fit: cover; /* Couvre tout l'espace de la boîte */
 }
 
-/* Texte sous chaque image (nom et prix) */
+/
 #Rooms .room-info {
     width: 100%;
     padding-left: 16px;
@@ -481,10 +480,11 @@ body {
 
 
 
+
 #Rooms .rooms-text-container {
     width: 100%;  
-    position: relative; 
-    font-family: 'Roboto Slab', serif !important;
+    position: relative;
+    font-family: 'Roboto Slab',
 }
 
 #Rooms .rooms-text-container h1 {
@@ -528,6 +528,8 @@ body {
     top: -15px;  
     left:0;
 }
+
+
 
 
 
