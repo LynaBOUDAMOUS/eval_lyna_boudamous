@@ -584,257 +584,101 @@ body {
     align-items: center;
     justify-content: center;
     gap: 50px;
+    flex-direction: row; /* Alignement des images à gauche, texte à droite */
+    align-items: center; /* Alignement vertical des éléments */
+    justify-content: center; /* Centrer horizontalement le contenu */
+    gap: 50px; /* Espacement entre les images et le texte */
     padding: 50px;
+    height: 80vh; /* Utilise toute la hauteur de l'écran */
 }
 
 #Restaurant  .image-container {
     position: relative;
+#Rooms .rooms-image-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Espace égal entre les boîtes d'images */
     align-items: center;
-    gap: 5px;
+    gap: 5px; 
     padding: 20px;
-    height: 60vh;
+    height: 60vh; 
 }
 
-#Restaurant .image-box {
+/* Encadré avec coins arrondis et bordure dorée */
+.image-box {
     position: relative;
+    width: 318px; 
+    height: 390px; 
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #c1b086;
+    top: 80px; 
+    left: 118px; 
+}
+
+
+#box1 img {
+    width: 100%;
+    height: 82%;
+    object-fit: cover; 
+}
+
+
+#box2 {
+    position: relative;
+    width: 318px; 
+    height: 390px;
+
     border-radius: 15px;
     border: 2px solid #c1b086;
     overflow: hidden;
-    box-shadow: 4px 4px 4px black;
+    top: 80px; 
+    left: 133px; 
 }
 
-#Restaurant .image-box img {
+#box2 img {
     width: 100%;
-    height: 100%;
+    height: 82%;
+    object-fit: cover; 
+}
+
+
+#box3 {
+    position: relative;
+    width: 318px; 
+    height: 390px; 
+
+    border-radius: 15px;
+    border: 2px solid #c1b086;
+    overflow: hidden;
+    top: 80px; 
+    left: 148px; 
+}
+
+#box3 img {
+    width: 100%;
+    height: 82%;
     object-fit: cover;
 }
 
-#Restaurant .box1 {
-    width: 332px;
-    height: 520px;
-    margin-left: 45px;
+#text-container {
+    width: 30%;
 }
 
-#Restaurant .box2 {
-    width: 323px;
-    height: 187px;
-    top: -40px;
-    margin-left: 10px;
-}
-#Restaurant .box3 {
-    width: 323px;
-    height: 187px;
-    top: -40px;
-    margin-left: 10px;
-}
-#Restaurant .box4 {
-    width: 323px;
-    height: 187px;
-    margin-top: 330px;
-    right: 670px;
-}
-#Restaurant .box5 {
-    width: 323px;
-    height: 187px;
-    margin-top: 330px;
-    right:660px;
-}
-
-#Restaurant .text-container {
-    position: relative;
-    top: -230px;
-    left: -1800px;
-    font-size: 9px;
-}
-
-#Restaurant .text-container h1 {
+/* Style du texte */
+#text-container h1 {
     font-size: 20px;
+    position: absolute; 
     color: black;
-    font-weight: normal;
     line-height: 1.6;
     text-align: left;
-    margin-left: 405px;
-    width: 100%;
-}
-
-#Restaurant .text-container h1::before {
-    content: "";
-    display: block;
-    width: 67px;
-    height: 3px;
-    background-color: #c1b086;
-    position: absolute;
-    top: -8px;
-    left: 0;
-    margin-left: 405px;
-    margin-top: 10px;
-}
-
-#Restaurant .text-container p {
-    font-size: 11px;
-    color: #555;
-    line-height: 1.6;
-    position: absolute;
-    top: 80px;
-    left: 405px;
-    width: 60%;
-    margin-left: 35px;
-    margin-top: -7px;
-}
-
-#Restaurant  .home-button {
-    font-weight: normal;
-    display: inline-block;
-    position: relative;  
-    margin-top: -400px;
-    padding: 15px 30px;
-    background-color: #c1b086;
-    color: white;
-    text-decoration: none;
-    font-size: 7px;
-    border-radius: 20px;
-    border: 1px solid white;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease-in-out;
-    margin-left: -1420px;
    
-}
-
-#Restaurant .overlay {
-    position: absolute;
-    top: 5%;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background-color: #c1b086;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(20px);
-    transition: transform 0.5s ease-out, opacity 0.5s ease, visibility 0.5s ease;
-}
-
-#Restaurant    .overlay .name {
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    transform: translateY(10px);
-    transition: transform 0.5s ease-out;
-}
-
-#Restaurant  .description-overlay {
-    top: 50%;
-    height: 35%;
-}
-
-#Restaurant  .description-overlay .description {
-    color: white;
-    font-size: 11px;
-    text-align: center;
-    transform: translateY(-50px);
-    transition: transform 0.5s ease-out;
-}
-
-#Restaurant .image-box:hover .overlay {
-    opacity: 0.85;
-    visibility: visible;
-}
-
-#Restaurant  .image-box:hover .overlay .name {
-    transform: translateY(0);
-}
-
-#Restaurant   .image-box:hover .description-overlay .description {
-    transform: translateY(0);
-}
-
-
-
-
-
-
-/*Gallery_________________________________________________________________________________________________________*/
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: black;
-    font-family: 'Roboto Slab', serif;
-}
-
-#Gallery    .content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 50px;
-}
-
-#Gallery   .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: 60vh;
-}
-
-#Gallery   .gallery {
-    display: flex;
-    gap: 5px;
-    margin-top: 30px;
-    margin-left: 200px;
-    position: relative;
-}
-
-#Gallery  .gallery input {
-    display: none;
-}
-
-#Gallery  .gallery label {
-    width: 33px;
-    height: 390px;
-    border-radius: 25px;
-    border: 2px solid #c1b086;
-    cursor: pointer;
-    transition: width 1.5s ease, border-color 0.8s ease, opacity 0.6s ease;
-    box-shadow: 2px 4px 10px black;
-    background-size: cover;
-    background-position: left;
-    display: block;
-    opacity: 0.6; /* Effet de transparence par défaut */
-}
-
-#Gallery  .gallery input:checked + label {
-    width: 705px;
-    border: 2px solid #664f14;
-    opacity: 1; /* Image agrandie sans transparence */
-}
-
-#Gallery  .text-container {
-    width: 100%;
-    position: relative;
-    bottom:260px;
-    right: 1120px;
+    left: -995px;
+    top: -230px;
+    width: 200%;
     font-family: 'Roboto Slab', serif !important;
 }
 
-#Gallery  .text-container h1 {
-    font-size: 20px;
-    color: black;
-    line-height: 1.6;
-    text-align: left;
-    margin-left: 55px;
-    font-weight: normal;
-    width: 200%;
-}
-
-#Gallery .text-container h2 {
+#Rooms .rooms-text-container h2 {
     font-size: 9px;
     color: #555;
     line-height: 1.6;
@@ -850,37 +694,64 @@ body {
 #Gallery  .text-container h2::before {
     content: "";
     display: block;
-    width: 60px;
-    height: 2.6px;
-    background-color: #c1b086;
+    width: 60px; 
+    height: 2.5px; 
+    background-color: #c1b086; 
     position: absolute;
-    top: -25px;
-    left: 0;
-    margin-top: 5px;
+    top: -8px; 
+    left: 0; 
 }
 
-#Gallery .home-button {
+#text-container {
+    position: absolute;
+    top: 20px; 
+    left: 70px; 
+    width: auto;
+}
+
+.home-button {
     font-weight: normal;
     display: inline-block;
-    margin-top: -500px;
-    margin-right:   -950px;
+    margin-top: -340px; 
+    margin-right: 142px !important;
     padding: 15px 30px;
     background-color: #c1b086;
     color: white;
     text-decoration: none;
     font-size: 7px;
-    border-radius: 20px;
-    border: 1px solid white;
-    box-shadow: 5px 10px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 20px; 
+    border: 1px solid white; 
+    box-shadow: 5px 10px 35px rgba(0, 0, 0, 0.5); 
     transition: background-color 0.3s ease-in-out;
-    position: absolute;
 }
 
-#Gallery  .home-button:hover {
+.home-button:hover {
     background-color: #c1b086;
 }
 
+.room-info {
+    width: 100%;
+    padding-top:-0.6px; 
+    padding-left: 16px; 
+    box-sizing: border-box; 
+    margin-top: -4px; 
+}
 
+/* Style pour les titres des chambres */
+.room-info h3 {
+    font-size: 12px;
+    color: #333; 
+}
 
+/* Style pour le prix */
+.room-info p {
+    font-size: 9px;
+    color: #888; 
+}
 
-
+/* Style pour le prix en gros */
+.room-info .price {
+    font-size: 15px; 
+    font-weight: bold; 
+    color: #333; 
+}
