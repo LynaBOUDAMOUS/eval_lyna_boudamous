@@ -562,8 +562,6 @@ body {
 /*Restaurant_________________________________________________________________________________________________________________*/
 
 
-
-/* Styles spécifiques à la section Restaurant */
 #Restaurant {
     margin: 0;
     padding: 50px;
@@ -571,7 +569,7 @@ body {
     color: black;
     font-family: 'Roboto Slab', serif;
     overflow-x: hidden;
-    height: 100vh; /* Utilise toute la hauteur de l'écran */
+    height: 100vh; 
 }
 
 .rest-content-container {
