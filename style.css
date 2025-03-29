@@ -767,18 +767,16 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-#Gallery {
+#Gallery    .content {
     display: flex;
-    flex-direction: row; 
-    height: 100vh;
-    width: 100vw;
-    align-items: center; 
-    justify-content: center; 
-    gap: 50px; 
-    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
 }
 
-#Gallery .image-container {
+#Gallery   .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -786,18 +784,19 @@ body {
     height: 60vh;
 }
 
-#thumbnails {
+#Gallery   .gallery {
     display: flex;
     gap: 5px;
-    margin-top: 205px;
-    margin-left: -20px;
+    margin-top: 30px;
+    margin-left: 200px;
+    position: relative;
 }
 
-#thumbnails input {
+#Gallery  .gallery input {
     display: none;
 }
 
-#thumbnails label {
+#Gallery  .gallery label {
     width: 33px;
     height: 390px;
     border-radius: 25px;
@@ -811,58 +810,60 @@ body {
     opacity: 0.6; /* Effet de transparence par défaut */
 }
 
-#thumbnails input:checked + label {
+#Gallery  .gallery input:checked + label {
     width: 705px;
     border: 2px solid #664f14;
     opacity: 1; /* Image agrandie sans transparence */
 }
 
-#Gallery .text-container {
-    width: 30%;
+#Gallery  .text-container {
+    width: 100%;
     position: relative;
-    top: 40px;
-    left: -50px;
+    bottom:260px;
+    right: 1120px;
+    font-family: 'Roboto Slab', serif !important;
 }
 
-#Gallery .text-container h1 {
+#Gallery  .text-container h1 {
     font-size: 20px;
     color: black;
-    line-height: 5;
+    line-height: 1.6;
     text-align: left;
-    margin-left: -900px;
+    margin-left: 55px;
     font-weight: normal;
-    
+    width: 200%;
 }
 
 #Gallery .text-container h2 {
     font-size: 9px;
     color: #555;
-    line-height:1.6;
+    line-height: 1.6;
     text-align: left;
-    margin-left: -900px;
-    width: 135%;
-    margin-top: 90px !important;
+    margin-left: 55px;
+    width: 200%;
+    margin-top: 30px !important;
     text-align: justify;
     position: relative;
     font-weight: normal;
 }
 
-#Gallery .text-container h2::before {
+#Gallery  .text-container h2::before {
     content: "";
     display: block;
     width: 60px;
-    height: 2.5px;
+    height: 2.6px;
     background-color: #c1b086;
-    position: relative;
-    margin-top:-20px;
-    left: 40;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    margin-top: 5px;
 }
 
 #Gallery .home-button {
     font-weight: normal;
     display: inline-block;
-    margin-top: -340px;
-    margin-left: 900px;
+    margin-top: -500px;
+    margin-right:   -950px;
     padding: 15px 30px;
     background-color: #c1b086;
     color: white;
@@ -875,7 +876,11 @@ body {
     position: absolute;
 }
 
-#Gallery .home-button:hover {
+#Gallery  .home-button:hover {
     background-color: #c1b086;
 }
+
+
+
+
 
